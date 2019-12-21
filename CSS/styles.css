@@ -1,43 +1,11 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e8ded9
+  background-color: #e8ded9;
 }
 
 .dif_color {
-  color: #61c386
-}
-
-.nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width:auto;
-}
-li a{
-  text-decoration: none;
-  color: #5b8c6f;
-}
-.button {
-  background-color: #61c386;
-  border-radius: 12px;
-  color: white;
-  padding: 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition-duration: 0.2s;
-  width: 100%
-}
-
-.button:hover {
   color: #61c386;
-  background-color: #f7e966
-  }
+}
 
 h1 {
   font-weight: 600;
@@ -47,45 +15,77 @@ h2 {
   font-weight: 400;
 }
 
-p {
-  color: #5b8c6f
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-img {
-  display: none;
+
+.nav-item a {
+  display: block;
+  color: #5b8c6f;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #61c386
+}
+
+p {
+  color: #5b8c6f;
+}
+
+@media screen and (max-width: 767px) {
+  #image {
+    display: none;
+  }
+}
+
+.button {
+  background-color: #61c386;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+  font-weight: 300;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%
+}
+
+.button:hover {
+  color: #61c386;
+  background-color: #f7e966
 }
 
 @media screen and (min-width: 768px) {
-  img {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    padding: 10px;
-  }
-  .nav{
+  nav {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    }
+
+  .nav-links {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: baseline;
   }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width:auto;
-  }
-  li a{
+
+  .nav-item a {
+    display: inline-block;
+    padding: 5px 5px;
     text-decoration: none;
     color: #5b8c6f;
+    align-items: center;
   }
+  #image {
+    background-image: url(code.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+  }
+
   .button {
-    background-color: #61c386;
-    border-radius: 12px;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.2s;
     width: auto;
   }
 }
