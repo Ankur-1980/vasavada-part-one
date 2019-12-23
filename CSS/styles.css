@@ -1,3 +1,21 @@
+.button {
+  color: white;
+  background-color: #61c386;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 12px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  }
+
+.button:hover {
+  color: #61c386;
+  background-color: #f7e966
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #e8ded9;
@@ -35,28 +53,12 @@ p {
   color: #5b8c6f;
 }
 
-@media screen and (max-width: 767px) {
-  #image {
-    display: none;
-  }
+img {
+  display: none;
 }
 
-.button {
-  background-color: #61c386;
-  border-radius: 10px;
-  margin: 10px;
-  color: white;
-  font-weight: 300;
-  padding: 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 100%
-}
-
-.button:hover {
-  color: #61c386;
-  background-color: #f7e966
+button {
+  box-shadow: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -70,6 +72,7 @@ p {
     list-style: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .nav-item a {
@@ -77,15 +80,20 @@ p {
     padding: 5px 5px;
     text-decoration: none;
     color: #5b8c6f;
-    align-items: center;
-  }
-  #image {
-    background-image: url(code.png);
-    background-repeat: no-repeat;
-    background-size: 25%;
-  }
+      }
 
   .button {
     width: auto;
+  }
+
+  img {
+    display: inline-block;
+    }
+
+  #image {
+      display: flex;
+      padding: 30px;
+      justify-content: center;
+      align-content: center;
   }
 }
